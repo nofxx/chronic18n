@@ -1,0 +1,33 @@
+:pt:
+  # Common
+  amanha: tomorrow
+  amanhã: tomorrow
+  ontem: yeasterday
+  próximo: next
+  segundo: second
+  segundos: seconds
+  minuto: minute
+  minutos: minutes
+  hora: hour
+  horas: hours
+  dia: day
+  dias: days
+  semana: week
+  semanas: weeks
+  mês: month
+  mes: month
+  meses: months
+  ano: year
+  anos: years
+  uma: one
+  duas: two
+  daqui: in
+  em: in
+  após: in
+  # Wdays
+  domingo: sunday
+  segunda: monday
+  segunda-feira: monday
+
+  # Months
+  maio: may
