@@ -1,9 +1,37 @@
 :pt:
+  # Misc
+  manhã: morning
+  manha: morning
+  tarde: afternoon
+  noite: night
+  madrugada: night
+  este: this
+  esta: this
+  primeiro: first
+  primeira: first
+  terceiro: third
+  terceira: third
+  quarto: fourth
+  quinto: fifth
+  sexto: sixth
+  setimo: seventh
+  sétimo: seventh
+  oitavo: eighth
+  nono: nineth
+
   # Common
   amanha: tomorrow
   amanhã: tomorrow
-  ontem: yeasterday
+  ontem: yesterday
   próximo: next
+  proximo: next
+  próxima: next
+  proxima: next
+  passado: last
+  ultimo: last
+  último: last
+  ultima: last
+  última: last
   segundo: second
   segundos: seconds
   minuto: minute
@@ -24,10 +52,82 @@
   daqui: in
   em: in
   após: in
+
+  # Numbers
+  um: one
+  dois: two
+  tres: three
+  três: three
+  quatro: four
+  cinco: five
+  seis: six
+  sete: seven
+  oito: eight
+  nove: nine
+  dez: ten
+  onze: eleven
+  doze: twelve
+  treze: thirteen
+  quatorze: fourteen
+  quinze: fifteen
+  dezesseis: sixteen
+  dezesete: seventeen
+  dezoito: eighteen
+  dezenove: nineteen
+  vinte: twenty
+  trinta: thirty
+  quarenta: fourty
+  cinquenta: fifty
+  sessenta: sixty
+  setenta: seventy
+  oitenta: eighty
+  noventa: ninety
+  cem: one hundred
+  duzentos: two hundred
+  trezentos: three hundred
+  quatrocentos: four hundred
+  quinhentos: five hundred
+  seicentos: six hundred
+  setecentos: seven hundred
+  oitocentos: eight hundred
+  novecentos: nine hundred
+  mil: thousand
+
   # Wdays
   domingo: sunday
   segunda: monday
   segunda-feira: monday
+  terça: tuesday
+  terca: tuesday
+  terça-feira: tuesday
+  terca-feira: tuesday
+  quarta: wednesday
+  quarta-feira: wednesday
+  quinta: thursday
+  quinta-feira: thursday
+  sexta: friday
+  sabado: saturday
+  sábado: saturday
 
   # Months
+  janeiro: january
+  fevereiro: february
+  março: march
+  abril: april
   maio: may
+  junho: june
+  julho: july
+  agosto: august
+  setembro: september
+  outubro: october
+  novembro: november
+  dezembro: december
+
+  # Season
+  verão: summer
+  verao: summer
+  outono: autumn
+  inverno: winter
+  primavera: spring
+
+

@@ -1,0 +1,127 @@
+:es:
+  # Misc
+  manana: morning
+  mañana: morning
+  tarde: afternoon
+  noche: night
+  alba: night
+  el: this
+  primero: first
+  primera: first
+  tercero: third
+  tercera: third
+  cuarto: fourth
+  quinto: fifth
+  sexto: sixth
+  septimo: seventh
+  octavo: eighth
+  noveno: nineth
+
+  # Common
+  manana: tomorrow
+  mañana: tomorrow
+  ayer: yeasterdayt
+  proximo: next
+  próximo: next
+  próxima: next
+  proxima: next
+  pasado: last
+  ultimo: last
+  último: last
+  ultima: last
+  última: last
+  hoy: today
+  segundo: second
+  segundos: seconds
+  minuto: minute
+  minutos: minutes
+  hora: hour
+  horas: hours
+  dia: day
+  día: day
+  dias: days
+  semana: week
+  semanas: weeks
+  mes: month
+  meses: months
+  ano: year
+  anos: years
+  año: year
+  años: years
+  una: one
+  dos: two
+  en: in
+
+  # Numbers
+  uno: one
+  dos: two
+  tres: three
+  cuatro: four
+  cinco: five
+  seis: six
+  siete: seven
+  ocho: eight
+  nueve: nine
+  diez: ten
+  once: eleven
+  doce: twelve
+  trece: thirteen
+  catorce: fourteen
+  quice: fifteen
+  dieciseis: sixteen
+  dieciséis: sixteen
+  diecisiete: seventeen
+  dieciocho: eighteen
+  diecinueve: nineteen
+  veinte: twenty
+  treinta: thirty
+  cuarenta: fourty
+  cincuenta: fifty
+  sesenta: sixty
+  setenta: seventy
+  ochenta: eighty
+  noventa: ninety
+  cien: one hundred
+  doscientos: two hundred
+  trecientos: three hundred
+  cuatrocientos: four hundred
+  quinientos: five hundred
+  seicientos: six hundred
+  setecientos: seven hundred
+  ochocientos: eight hundred
+  nuevecientos: nine hundred
+  mil: thousand
+
+  # Wdays
+  domingo: sunday
+  lunes: monday
+  martes: tuesday
+  miercules: wednesday
+  miércules: wednesday
+  jueves: thursday
+  viernes: friday
+  sabado: saturday
+  sábado: saturday
+
+  # Months
+  enero: january
+  febrero: february
+  marcha: march
+  abril: april
+  mayo: may
+  junio: june
+  julio: july
+  agosto: august
+  septiebre: september
+  octubre: october
+  noviebre: november
+  diciembre: december
+
+  # Season
+  verano: summer
+  otono: autumn
+  otoño: autumn
+  invierno: winter
+  primavera: spring
+
+

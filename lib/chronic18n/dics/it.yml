@@ -1,0 +1,109 @@
+:it:
+  # Misc
+  mattina: morning
+  pomeriggio: afternoon
+  note: night
+  questo: this
+  primo: first
+  prima: first
+  terzo: third
+  terza: third
+  quarto: fourth
+  quinto: fifth
+  sesto: sixth
+  settimo: seventh
+  ottavo: eighth
+  nono: nineth
+
+  # Common
+  domani: tomorrow
+  ieri: yesterday
+  prossimo: next
+  prossima: next
+  ultimo: last
+  ultima: last
+  oggi: today
+  secondo: second
+  secondos: seconds
+  minuto: minute
+  minutos: minutes
+  ora: hour
+  oras: hours
+  diorno: day
+  settimana: week
+  settimanas: weeks
+  mese: month
+  meses: months
+  anno: year
+  annos: years
+  una: one
+
+  # Numbers
+  uno: one
+  due: two
+  tre: three
+  quattro: four
+  cinque: five
+  sei: six
+  sette: seven
+  otto: eight
+  nove: nine
+  dieci: ten
+  undici: eleven
+  dodici: twelve
+  tredici: thirteen
+  quattordici: fourteen
+  quindici: fifteen
+  sedici: sixteen
+  diciasette: seventeen
+  diciotto: eighteen
+  dicinnove: nineteen
+  venti: twenty
+  trenta: thirty
+  quaranta: fourty
+  cinquanta: fifty
+  sessanta: sixty
+  settanta: seventy
+  ottanta: eighty
+  novanta: ninety
+  centinaio: one hundred
+  duecento: two hundred
+  trecento: three hundred
+  quattrocento: four hundred
+  cinquecento: five hundred
+  seicento: six hundred
+  settecento: seven hundred
+  ottocento: eight hundred
+  novecento: nine hundred
+  mille: thousand
+
+  # Wdays
+  domenica: sunday
+  lunedi: monday
+  martedi: tuesday
+  mercoledi: wednesday
+  giovedi: thursday
+  venerdi: friday
+  sabato: saturday
+
+  # Months
+  gennaio: january
+  febbraio: february
+  marcia: march
+  aprile: april
+  maggio: may
+  giugno: june
+  luglio: july
+  agosto: august
+  settembre: september
+  ottobre: october
+  novembre: november
+  dicembre: december
+
+  # Season
+  estate: summer
+  autunno: autumn
+  inverno: winter
+  primavera: spring
+
+
