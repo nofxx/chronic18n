@@ -1,17 +1,13 @@
 require "chronic"
 require "yaml"
 
+require "chronic18n/translator"
 
 module Chronic18n
 
   def self.parse(txt, lang = nil)
-    Chronic.parse(lang ? const_get(lang.capitalize).translate(txt) : txt)
-  end
-
-  def self.load_dic(lang)
-    YAML.load(File.read(File.join(File.dirname(__FILE__), "chronic18n", "dics", "#{lang}.yml")))[lang]
+    Chronic.parse(lang ? Translator.new(txt, lang).work : txt)
   end
 
 end
 
-require "chronic18n/pt"
