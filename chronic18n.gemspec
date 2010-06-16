@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{chronic18n}
-  s.version = "0.0.1.alpha.1"
+  s.version = "0.0.3"
 
-  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marcos Piccinini"]
-  s.date = %q{2010-06-09}
+  s.date = %q{2010-06-16}
   s.description = %q{One 'way' to i18n chronic}
   s.email = %q{x@nofxx.com}
   s.extra_rdoc_files = [
@@ -28,8 +28,10 @@ Gem::Specification.new do |s|
      "lib/chronic18n/dics/es.yml",
      "lib/chronic18n/dics/it.yml",
      "lib/chronic18n/dics/pt.yml",
-     "lib/chronic18n/pt.rb",
+     "lib/chronic18n/translator.rb",
      "spec/chronic18n/en_spec.rb",
+     "spec/chronic18n/es_spec.rb",
+     "spec/chronic18n/it_spec.rb",
      "spec/chronic18n/pt_spec.rb",
      "spec/chronic18n_spec.rb",
      "spec/spec_helper.rb"
@@ -41,8 +43,10 @@ Gem::Specification.new do |s|
   s.summary = %q{i18n chronic}
   s.test_files = [
     "spec/spec_helper.rb",
+     "spec/chronic18n/es_spec.rb",
      "spec/chronic18n/en_spec.rb",
      "spec/chronic18n/pt_spec.rb",
+     "spec/chronic18n/it_spec.rb",
      "spec/chronic18n_spec.rb"
   ]
 
