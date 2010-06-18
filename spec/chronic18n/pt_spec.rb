@@ -27,6 +27,9 @@ describe "Portuguese" do
     Chronic18n.parse("maio 3", :pt).month.should eql(5)
   end
 
+  it "should parse next week" do
+    Chronic18n.parse("semana que vem", :pt).day.should eql(Time.now.day + 7)
+  end
   # it "should parse month" do
   #   Chronic18n.parse("daqui 3 dias", :pt).day.should eql(Time.now.day + 3)
   # end
