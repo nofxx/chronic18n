@@ -1,5 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
+HOUR = HOURS = 3600
+DAY = DAYS = 86400
+
+def get_time(t)
+  Time.at(Time.now + t)
+end
+
 describe "Portuguese" do
 
   it "should parse something" do
@@ -7,7 +14,7 @@ describe "Portuguese" do
   end
 
   it "should parse hour" do
-    Chronic18n.parse("daqui 7 horas", :pt).hour.should eql(Time.now.hour + 7)
+    Chronic18n.parse("daqui 7 horas", :pt).hour.should eql(get_time(7 * HOURS).hour)
   end
 
   it "should parse hour" do
@@ -28,14 +35,15 @@ describe "Portuguese" do
   end
 
   it "should parse next week" do
-    Chronic18n.parse("semana que vem", :pt).day.should eql(Time.now.day + 7)
+    Chronic18n.parse("mes que vem", :pt).month.should eql((Time.now.month + 1 % 12))
   end
-  # it "should parse month" do
-  #   Chronic18n.parse("daqui 3 dias", :pt).day.should eql(Time.now.day + 3)
-  # end
 
-  # it "should parse month" do
-  #   Chronic18n.parse("daqui 3 semanas", :pt).day.should eql(Time.now.day + 3)
-  # end
+  it "should parse month" do
+    Chronic18n.parse("daqui 3 dias", :pt).day.should eql(get_time(3 * DAYS).day)
+  end
+
+  it "should parse month" do
+    Chronic18n.parse("daqui 3 semanas", :pt).day.should eql(get_time(21 * DAYS).day)
+  end
 
 end

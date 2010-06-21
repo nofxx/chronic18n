@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{chronic18n}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marcos Piccinini"]
-  s.date = %q{2010-06-16}
+  s.date = %q{2010-06-21}
   s.description = %q{One 'way' to i18n chronic}
   s.email = %q{x@nofxx.com}
   s.extra_rdoc_files = [
@@ -26,8 +26,11 @@ Gem::Specification.new do |s|
      "chronic18n.gemspec",
      "lib/chronic18n.rb",
      "lib/chronic18n/dics/es.yml",
+     "lib/chronic18n/dics/es_regex.yml",
      "lib/chronic18n/dics/it.yml",
+     "lib/chronic18n/dics/it_regex.yml",
      "lib/chronic18n/dics/pt.yml",
+     "lib/chronic18n/dics/pt_regex.yml",
      "lib/chronic18n/translator.rb",
      "spec/chronic18n/en_spec.rb",
      "spec/chronic18n/es_spec.rb",
