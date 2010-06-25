@@ -4,6 +4,8 @@ module Chronic18n
     h.merge YAML.load(File.read(y))
   end
 
+  class UnknownLanguage < StandardError;  end
+
   class Translator
 
     def initialize(txt, lang)
@@ -12,7 +14,8 @@ module Chronic18n
 
     def work
       # Return the text if we don't have the dictionary
-      return @txt unless dic = DICS[@lang]
+      # return @txt unless dic = DICS[@lang]
+      raise UnknownLanguage unless dic = DICS[@lang]
 
       # Regex gsub!
       if rxp = DICS["#{@lang}_regex"]
