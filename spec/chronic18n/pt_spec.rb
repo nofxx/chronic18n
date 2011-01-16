@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 HOUR = HOURS = 3600
@@ -18,7 +19,7 @@ describe "Portuguese" do
   end
 
   it "should parse hour" do
-    Chronic18n.parse("em 7 minutos", :pt).min.should eql(Time.now.min + 7)
+    Chronic18n.parse("em 7 minutos", :pt).min.should eql((Time.now.min + 7) % 60)
   end
 
   it "should parse sunday" do
@@ -44,6 +45,14 @@ describe "Portuguese" do
 
   it "should parse month" do
     Chronic18n.parse("daqui 3 semanas", :pt).day.should eql(get_time(21 * DAYS).day)
+  end
+
+  it "should parse month" do
+    Chronic18n.parse("hoje às 9", :pt).day.should eql(Time.now.day)
+  end
+
+  it "should parse now" do
+    Chronic18n.parse("agora", :pt).day.should eql(Time.now.day)
   end
 
 end

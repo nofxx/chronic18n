@@ -20,6 +20,8 @@ pt:
   nono: nineth
 
   # Common
+  hoje: today
+  agora: now
   amanha: tomorrow
   amanhã: tomorrow
   ontem: yesterday
@@ -52,6 +54,8 @@ pt:
   daqui: in
   em: in
   após: in
+  as: at
+  às: at
 
   # Numbers
   um: one
