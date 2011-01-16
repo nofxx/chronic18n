@@ -3,28 +3,40 @@ es:
   manana: morning
   mañana: morning
   tarde: afternoon
+  mediodia: noon
+  mediodía: noon
   noche: night
   alba: night
-  el: this
+  este: this
+  esta: this
   primero: first
   primera: first
+  primer: first
   tercero: third
   tercera: third
+  tercer: third
   cuarto: fourth
   quinto: fifth
   sexto: sixth
   septimo: seventh
+  séptimo: seventh
+  sétimo: seventh
+  setimo: seventh
   octavo: eighth
   noveno: nineth
+  décimo: tenth
+  decimo: tenth
 
   # Common
   manana: tomorrow
   mañana: tomorrow
-  ayer: yeasterdayt
+  man: tomorrow
+  ayer: yesterday
   proximo: next
   próximo: next
   próxima: next
   proxima: next
+  prox: next
   pasado: last
   ultimo: last
   último: last
@@ -35,6 +47,7 @@ es:
   segundos: seconds
   minuto: minute
   minutos: minutes
+  min: minutes
   hora: hour
   horas: hours
   dia: day
@@ -67,7 +80,7 @@ es:
   doce: twelve
   trece: thirteen
   catorce: fourteen
-  quice: fifteen
+  quince: fifteen
   dieciseis: sixteen
   dieciséis: sixteen
   diecisiete: seventeen
@@ -83,39 +96,60 @@ es:
   noventa: ninety
   cien: one hundred
   doscientos: two hundred
-  trecientos: three hundred
+  trescientos: three hundred
   cuatrocientos: four hundred
   quinientos: five hundred
-  seicientos: six hundred
+  seiscientos: six hundred
   setecientos: seven hundred
   ochocientos: eight hundred
-  nuevecientos: nine hundred
+  novecientos: nine hundred
   mil: thousand
 
   # Wdays
   domingo: sunday
+  dom: sunday
   lunes: monday
+  lun: monday
   martes: tuesday
-  miercules: wednesday
-  miércules: wednesday
+  mar: tuesday
+  miercoles: wednesday
+  miércoles: wednesday
+  mie: wednesday
   jueves: thursday
+  jue: thursday
   viernes: friday
+  vie: friday
   sabado: saturday
   sábado: saturday
+  sab: saturday
 
   # Months
   enero: january
   febrero: february
-  marcha: march
+  marzo: march
   abril: april
   mayo: may
   junio: june
   julio: july
   agosto: august
-  septiebre: september
+  septiembre: september
+  setiembre: september
   octubre: october
-  noviebre: november
+  noviembre: november
   diciembre: december
+  ene: january
+  feb: february
+  mar: march
+  abr: april
+  may: may
+  jun: june
+  jul: july
+  ago: august
+  sep: september
+  set: september
+  oct: october
+  nov: november
+  dic: december
 
   # Season
   verano: summer
