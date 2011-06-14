@@ -18,6 +18,8 @@ pt:
   sétimo: seventh
   oitavo: eighth
   nono: nineth
+  décimo: tenth
+  decimo: tenth
 
   # Common
   hoje: today
@@ -77,7 +79,7 @@ pt:
   dezesseis: sixteen
   dezesete: seventeen
   dezoito: eighteen
-  dezenove: nineteen
+  dezanove: nineteen
   vinte: twenty
   trinta: thirty
   quarenta: fourty
@@ -99,24 +101,33 @@ pt:
 
   # Wdays
   domingo: sunday
+  dom: sunday
   segunda: monday
   segunda-feira: monday
+  seg: monday
   terça: tuesday
   terca: tuesday
   terça-feira: tuesday
   terca-feira: tuesday
+  ter: tuesday
   quarta: wednesday
   quarta-feira: wednesday
+  qua: wednesday
   quinta: thursday
   quinta-feira: thursday
+  qui: thursday
   sexta: friday
+  sexta-feira: friday
+  sex: friday
   sabado: saturday
   sábado: saturday
+  sab: saturday
 
   # Months
   janeiro: january
   fevereiro: february
   março: march
+  marco: march
   abril: april
   maio: may
   junho: june
@@ -126,6 +137,18 @@ pt:
   outubro: october
   novembro: november
   dezembro: december
+  jan: january
+  fev: february
+  mar: march
+  abr: april
+  mai: may
+  jun: june
+  jul: july
+  ago: august
+  set: september
+  out: october
+  nov: november
+  dec: december
 
   # Season
   verão: summer
