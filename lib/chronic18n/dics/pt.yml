@@ -32,10 +32,13 @@ pt:
   próxima: next
   proxima: next
   passado: last
+  passada: last
   ultimo: last
   último: last
   ultima: last
   última: last
+  há: past
+  ha: past
   segundo: second
   segundos: seconds
   minuto: minute
