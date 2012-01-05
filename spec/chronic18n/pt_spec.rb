@@ -36,7 +36,7 @@ describe "Portuguese" do
 
   it "should parse monday at 20:00 (8pm)" do
     Chronic18n.parse("seg as 20:00", :pt).wday.should eql(1)
-    Chronic18n.parse("seg as 20", :pt).wday.should eql(1)
+    Chronic18n.parse("segunda as 20:00", :pt).wday.should eql(1)
   end
 
   it "should parse month" do
