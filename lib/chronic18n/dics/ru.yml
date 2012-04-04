@@ -85,44 +85,43 @@ ru:
   через: in
 
   # Numbers
-  uno: one
-  dos: two
-  tres: three
-  cuatro: four
-  cinco: five
-  seis: six
-  siete: seven
-  ocho: eight
-  nueve: nine
-  diez: ten
-  once: eleven
-  doce: twelve
-  trece: thirteen
-  catorce: fourteen
-  quince: fifteen
-  dieciseis: sixteen
-  dieciséis: sixteen
-  diecisiete: seventeen
-  dieciocho: eighteen
-  diecinueve: nineteen
-  veinte: twenty
-  treinta: thirty
-  cuarenta: fourty
-  cincuenta: fifty
-  sesenta: sixty
-  setenta: seventy
-  ochenta: eighty
-  noventa: ninety
-  cien: one hundred
-  doscientos: two hundred
-  trescientos: three hundred
-  cuatrocientos: four hundred
-  quinientos: five hundred
-  seiscientos: six hundred
-  setecientos: seven hundred
-  ochocientos: eight hundred
-  novecientos: nine hundred
-  mil: thousand
+  один: one
+  два: two
+  три: three
+  четыре: four
+  пять: five
+  шесть: six
+  семь: seven
+  восемь: eight
+  девять: nine
+  десять: ten
+  одиенадцать: eleven
+  двенадцать: twelve
+  тринадцать: thirteen
+  четырнадцать: fourteen
+  пятнадцать: fifteen
+  шестнадцать: sixteen
+  семнадцать: seventeen
+  восемнадцать: eighteen
+  девятнадцать: nineteen
+  двадцать: twenty
+  тридцать: thirty
+  сорок: fourty
+  пятьдесят: fifty
+  шестьдесят: sixty
+  семьдесят: seventy
+  восемьдесят: eighty
+  девяносто: ninety
+  сто: one hundred
+  двести: two hundred
+  триста: three hundred
+  четыреста: four hundred
+  пятьсот: five hundred
+  шестьсот: six hundred
+  семьсот: seven hundred
+  восемьсот: eight hundred
+  девятьсот: nine hundred
+  тысяча: thousand
 
   # Wdays
   воскресенье: sunday
@@ -179,11 +178,14 @@ ru:
   ноя: november
   дек: december
 
-  # # Season
-  # verano: summer
-  # otono: autumn
-  # otoño: autumn
-  # invierno: winter
-  # primavera: spring
+  # Season
+  лето: summer
+  летом: summer
+  осень: autumn
+  осенью: autumn
+  зима: winter
+  зимой: winter
+  весна: spring
+  весной: spring
 
 
