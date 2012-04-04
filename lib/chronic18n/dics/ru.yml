@@ -1,0 +1,189 @@
+ru:
+  # Misc
+  утра: morning
+  дня: afternoon
+  полдень: noon
+  вечера: night
+  ночи: night
+  это: this
+  эта: this
+  этого: this
+  этой: this
+  первый: first
+  первая: first
+  первое: first
+  второй: second
+  второе: second
+  вторая: second
+  третий: third
+  третье: third
+  третья: third
+  четвертый: fourth
+  четвертое: fourth
+  четвертая: fourth
+  пятый: fifth
+  пятая: fifth
+  пятое: fifth
+  шестой: sixth
+  шестое: sixth
+  шестая: sixth
+  седьмой: seventh
+  седьмое: seventh
+  седьмая: seventh
+  восьмой: eighth
+  восьмая: eighth
+  восьмое: eighth
+  девятый: ninth
+  девятая: ninth
+  девятое: ninth
+  десятый: tenth
+  десятая: tenth
+  десятое: tenth
+
+  # # Common
+  завтра: tomorrow
+  вчера: yesterday
+  сейчас: now
+  следующий: next
+  следующего: next
+  следующей: next
+  следующим: next
+  следующем: next
+  прошлый: last
+  прошлого: last
+  прошлой: last
+  прошлым: last
+  прошлом: last
+  сегодня: today
+  секунда: second
+  секунды: seconds
+  секунд: seconds
+  минута: minute
+  минуты: minutes
+  минут: minutes
+  мин: minutes
+  час: hour
+  часа: hours
+  часов: hours
+  день: day
+  дня: days
+  дней: days
+  неделя: week
+  недели: weeks
+  недель: weeks
+  месяц: month
+  месяца: months
+  месяцев: months
+  год: year
+  # NOTE: 'года' in russian is used both as duration (2 года = 2 years)
+  #       and as year mark (16 марта 2011 года = 16th March 2011)
+  #       so this definition is ambiguous
+  года: ""
+  лет: years
+  один: one
+  два: two
+  через: in
+
+  # Numbers
+  uno: one
+  dos: two
+  tres: three
+  cuatro: four
+  cinco: five
+  seis: six
+  siete: seven
+  ocho: eight
+  nueve: nine
+  diez: ten
+  once: eleven
+  doce: twelve
+  trece: thirteen
+  catorce: fourteen
+  quince: fifteen
+  dieciseis: sixteen
+  dieciséis: sixteen
+  diecisiete: seventeen
+  dieciocho: eighteen
+  diecinueve: nineteen
+  veinte: twenty
+  treinta: thirty
+  cuarenta: fourty
+  cincuenta: fifty
+  sesenta: sixty
+  setenta: seventy
+  ochenta: eighty
+  noventa: ninety
+  cien: one hundred
+  doscientos: two hundred
+  trescientos: three hundred
+  cuatrocientos: four hundred
+  quinientos: five hundred
+  seiscientos: six hundred
+  setecientos: seven hundred
+  ochocientos: eight hundred
+  novecientos: nine hundred
+  mil: thousand
+
+  # Wdays
+  воскресенье: sunday
+  воскресение: sunday
+  вс: sunday
+  понедельник: monday
+  пн: monday
+  вторник: tuesday
+  вт: tuesday
+  среда: wednesday
+  ср: wednesday
+  четверг: thursday
+  чт: thursday
+  пятница: friday
+  пт: friday
+  суббота: saturday
+  сб: saturday
+
+  # Months
+  январь: january
+  января: january
+  февраль: february
+  февраля: february
+  март: march
+  марта: march
+  апрель: april
+  апреля: april
+  май: may
+  мая: may
+  июнь: june
+  июня: june
+  июль: july
+  июля: july
+  август: august
+  августа: august
+  сентябрь: september
+  сентября: september
+  октябрь: october
+  октября: october
+  ноябрь: november
+  ноября: november
+  декабрь: december
+  декабря: december
+  янв: january
+  фев: february
+  мар: march
+  апр: april
+  май: may
+  июн: june
+  июл: july
+  авг: august
+  сен: september
+  окт: october
+  ноя: november
+  дек: december
+
+  # # Season
+  # verano: summer
+  # otono: autumn
+  # otoño: autumn
+  # invierno: winter
+  # primavera: spring
+
+
