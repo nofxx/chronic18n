@@ -1,0 +1,127 @@
+fr:
+  # Misc
+  matin: morning
+  après-midi: afternoon
+  midi: noon
+  nuit: night
+  ce: this
+  premier: first
+
+  # Common
+  demain: tomorrow
+  hier: yesterday
+  prochain: next
+  dernier: last
+  aujourd'hui: today
+  seconde: second
+  secondes: seconds
+  minute: minute
+  minutes: minutes
+  min: minutes
+  heure: hour
+  heures: hours
+  jour: day
+  jours: days
+  semaine: week
+  semaines: weeks
+  mois: month
+  année: year
+  années: years
+  dans: in
+
+  # Numbers
+  un: one
+  deux: two
+  trois: three
+  quatre: four
+  cinq: five
+  six: six
+  sept: seven
+  huit: eight
+  neuf: nine
+  dix: ten
+  onze: eleven
+  douze: twelve
+  treize: thirteen
+  quatorze: fourteen
+  quinze: fifteen
+  seize: sixteen
+  dix-sept: seventeen
+  dix-huit: eighteen
+  dix-neuf: nineteen
+  vingt: twenty
+  trente: thirty
+  quarante: fourty
+  cinquante: fifty
+  soixante: sixty
+  soixante-dix: seventy
+  quatre-vingt: eighty
+  quatre-vingt-dix: ninety
+  cent: one hundred
+  'deux cents': two hundred
+  'trois cents': three hundred
+  'quatre cents': four hundred
+  'cinq cents': five hundred
+  'six cents': six hundred
+  'sept cents': seven hundred
+  'huit cents': eight hundred
+  'neuf cents': nine hundred
+  'mille': thousand
+
+  # Wdays
+  dimanche: sunday
+  dim: sunday
+  lundi: monday
+  lun: monday
+  mardi: tuesday
+  mar: tuesday
+  mercredi: wednesday
+  mer: wednesday
+  jeudi: thursday
+  jeu: thursday
+  vendredi: friday
+  ven: friday
+  samedi: saturday
+  sam: saturday
+
+  # Months
+  janvier: january
+  fevrier: february
+  mars: march
+  avril: april
+  mai: may
+  juin: june
+  juillet: july
+  août: august
+  aout: august
+  septembre: september
+  octobre: october
+  novembre: november
+  décembre: december
+  decembre: december
+  jan: january
+  janv: january
+  fev: february
+  fév: february
+  févr: february
+  mar: march
+  avr: april
+  mai: may
+  jun: june
+  jul: july
+  juill: july
+  aou: august
+  aoû: august
+  sept: september
+  sep: september
+  oct: october
+  nov: november
+  dec: december
+  déc: december
+
+  # Season
+  été: summer
+  ete: summer
+  automne: autumn
+  hiver: winter
+  printemps: spring
