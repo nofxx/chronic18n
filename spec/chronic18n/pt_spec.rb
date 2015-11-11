@@ -64,13 +64,11 @@ describe "Portuguese" do
     Chronic18n.parse("hoje às 9", :pt).day.should eql(Time.now.day)
   end
 
-  it "should parse today at" do
-    Chronic18n.parse("às 9", :pt).day.should eql(Time.now.day)
-    Chronic18n.parse("as 9", :pt).day.should eql(Time.now.day)
-  end
-
   it "should parse now" do
     Chronic18n.parse("agora", :pt).day.should eql(Time.now.day)
   end
 
+  it 'should parse regardless of case' do
+    Chronic18n.parse("Outubro 12, 2015", :pt).should eq(Time.parse("2015-10-12 12:00:00"))
+  end
 end

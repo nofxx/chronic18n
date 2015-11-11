@@ -9,7 +9,7 @@ module Chronic18n
   class Translator
 
     def initialize(txt, lang)
-      @txt, @lang = txt, lang.to_s
+      @txt, @lang = txt.downcase, lang.to_s
     end
 
     def work

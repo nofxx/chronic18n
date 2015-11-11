@@ -18,4 +18,12 @@ coverage
 rdoc
 pkg
 
-## PROJECT::SPECIFIC
+.ruby-version
+*.rbc
+.yardoc
+/.bundle/
+/pkg/
+/coverage/
+/doc/
+/tags/
+Gemfile.lock
