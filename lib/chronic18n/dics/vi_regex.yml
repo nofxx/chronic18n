@@ -1,0 +1,25 @@
+vi_regex:
+  !ruby/regexp '/tháng 1/': january
+  !ruby/regexp '/tháng 2/': february
+  !ruby/regexp '/tháng 3/': march
+  !ruby/regexp '/tháng 4/': april
+  !ruby/regexp '/tháng 5/': may
+  !ruby/regexp '/tháng 6/': june
+  !ruby/regexp '/tháng 7/': july
+  !ruby/regexp '/tháng 8/': august
+  !ruby/regexp '/tháng 9/': september
+  !ruby/regexp '/tháng 10/': october
+  !ruby/regexp '/tháng 11/': november
+  !ruby/regexp '/tháng 12/': december
+  !ruby/regexp '/tháng giêng/': january
+  !ruby/regexp '/tháng hai/': february
+  !ruby/regexp '/tháng ba/': march
+  !ruby/regexp '/tháng tư/': april
+  !ruby/regexp '/tháng năm/': may
+  !ruby/regexp '/tháng sáu/': june
+  !ruby/regexp '/tháng bảy/': july
+  !ruby/regexp '/tháng tám/': august
+  !ruby/regexp '/tháng chín/': september
+  !ruby/regexp '/tháng mười/': october
+  !ruby/regexp '/tháng mười một/': november
+  !ruby/regexp '/tháng mười hai/': december

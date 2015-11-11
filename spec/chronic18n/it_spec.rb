@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
-describe "Spanish" do
+describe "Italian" do
 
   it "should parse something" do
     Chronic18n.parse("sabato", :it).should be_a Time
