@@ -10,33 +10,9 @@ A (naive?) way to use chronic on other languages.
 
 == Use
 
-Same as Chronic, just change the module.
+Same as Chronic, but with additional options.
 
-  Chronic18n.parse("portuguese | spanish | italian sentence", :xx)
-
-Where xx is the lang code to parse: :pt, :es, :it. (see To Do)
-
-
-== To Do
-
-* Test if this works.
-* More languages if it works.
-* That gem that detects the language? (WhatLanguage heh)
-
-  Chronic18n.parse("portuguese | spanish | italian sentence")
-
-
-== Note on Patches/Pull Requests
-
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
-
-
-== Copyright
-
-Copyright (c) 2010 Marcos Piccinini. See LICENSE for details.
+  Chronic18n.parse("Outubro 12, 2015", country: 'BR') # 2015-10-12
+  Chronic18n.parse("3 tháng 1 năm 2015", lang: :vi) # 2015-01-03
+  Chronic18n.parse("04/03/2005", country: 'US') # 2005-04-03
+  Chronic18n.parse("04/03/2005", country: 'AU') # 2005-03-04
