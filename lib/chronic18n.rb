@@ -20,6 +20,7 @@ module Chronic18n
   #
   def self.parse(txt, options = {})
     return nil if txt.nil?
+    txt = txt.downcase
 
     country = options.delete :country
     lang = options.delete(:lang)

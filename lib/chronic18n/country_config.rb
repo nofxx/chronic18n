@@ -23,6 +23,7 @@ module Chronic18n
       if @country
         tokens = text.split(/\s/)
         @country.languages.each do |lang|
+          lang = lang.split('-').first
           if dic = Chronic18n::DICS[lang]
             # if there's an intersection of tokens then we've detected the language
             return lang if !(tokens & dic.keys).empty?

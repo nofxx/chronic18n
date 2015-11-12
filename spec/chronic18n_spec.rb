@@ -6,7 +6,7 @@ describe "Chronic18n" do
     Chronic18n.should be_a Module
   end
 
-  it "should raise error if it doesn't parle x" do
-    expect { Chronic18n.parse("cras nox noctis", :la) }.to raise_error(Chronic18n::UnknownLanguage)
+  it "should return nil if it doesn't parse x" do
+    Chronic18n.parse("cras nox noctis", lang: :la).should be_nil
   end
 end
