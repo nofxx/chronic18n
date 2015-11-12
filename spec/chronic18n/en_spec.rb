@@ -7,11 +7,10 @@ describe "English" do
   end
 
   it "should fallback to en fine" do
-    Chronic18n.parse("sunday", "en").wday.should eql(0)
+    Chronic18n.parse("sunday", lang: "en").wday.should eql(0)
   end
 
   it "should fallback to en fine" do
-    Chronic18n.parse("sunday", :en).wday.should eql(0)
+    Chronic18n.parse("sunday", country: 'PH').wday.should eql(0)
   end
-
 end

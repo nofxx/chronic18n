@@ -1,0 +1,11 @@
+US:
+  parser_options:
+    :endian_precedence:
+      - :middle
+TH:
+  parser: ThaiChronic
+default:
+  parser_options:
+    :endian_precedence:
+      - :little
+  parser: Chronic

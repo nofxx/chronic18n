@@ -43,19 +43,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.12"
   s.summary = "i18n chronic"
 
-  if s.respond_to? :specification_version then
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<chronic>, [">= 0.2.3"])
-      s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
-    else
-      s.add_dependency(%q<chronic>, [">= 0.2.3"])
-      s.add_dependency(%q<rspec>, [">= 1.2.9"])
-    end
-  else
-    s.add_dependency(%q<chronic>, [">= 0.2.3"])
-    s.add_dependency(%q<rspec>, [">= 1.2.9"])
-  end
+  s.add_development_dependency 'rspec'
+  s.add_dependency 'chronic'
+  s.add_dependency 'countries'
+  s.add_dependency 'cld'
 end
 
