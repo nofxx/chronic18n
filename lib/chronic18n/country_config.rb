@@ -7,8 +7,10 @@ module Chronic18n
     DEFAULT_CONFIG = CONFIG['default']
 
     def initialize(country)
-      @config = CONFIG[country.upcase] if country
-      @country = ISO3166::Country[country]
+      if country
+        @config = CONFIG[country]
+        @country = ISO3166::Country[country]
+      end
     end
 
     def parser_options

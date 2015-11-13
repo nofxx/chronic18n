@@ -22,8 +22,11 @@ module Chronic18n
     return nil if txt.nil?
     txt = txt.downcase
 
-    country = options.delete :country
+    country = options.delete(:country)
     lang = options.delete(:lang)
+
+    lang = lang.to_s if lang
+    country = country.to_s.upcase if country
 
     cc = CountryConfig.new(country)
     options = cc.parser_options.merge(options)
