@@ -18,7 +18,7 @@ module Chronic18n
       end
 
       # Match translate
-      @txt.split(/\s/).map { |w| dic[w] || w }.join(" ")
+      @txt.split(/\s|\-|\//).map { |w| dic[w] || w }.join(" ")
     end
   end
 end
