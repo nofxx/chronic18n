@@ -40,6 +40,7 @@ pt:
   última: last
   há: past
   ha: past
+  hace: past
   segundo: second
   segundos: seconds
   minuto: minute
@@ -48,6 +49,7 @@ pt:
   horas: hours
   dia: day
   dias: days
+  días: days
   semana: week
   semanas: weeks
   mês: month

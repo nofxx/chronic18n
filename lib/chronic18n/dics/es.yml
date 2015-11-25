@@ -42,6 +42,7 @@ es:
   último: last
   ultima: last
   última: last
+  hace: past
   hoy: today
   segundo: second
   segundos: seconds
@@ -53,6 +54,7 @@ es:
   dia: day
   día: day
   dias: days
+  días: days
   semana: week
   semanas: weeks
   mes: month
