@@ -1,0 +1,3 @@
+id_regex:
+  !ruby/regexp "/minggu lalu/": last week
+  !ruby/regexp "/bulan lalu/": last month

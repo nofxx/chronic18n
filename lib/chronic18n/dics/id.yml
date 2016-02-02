@@ -1,0 +1,31 @@
+id:
+  # Months
+  januari: january
+  februari: february
+  maret: march
+  april: april
+  mei: may
+  juni: june
+  juli: july
+  agustus: august
+  september: september
+  oktober: october
+  november: november
+  desember: december
+
+  # Wdays
+  senin: monday
+  selasa: tuesday
+  rabu: wednesday
+  kamis: thursday
+  jumat: friday
+  sabtu: saturday
+  minggu: sunday
+
+  # Misc
+  lalu: ago
+  hari: days
+  minggu: weeks
+  jam: hours
+  bulan: months
+  kemarin: yesterday
