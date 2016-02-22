@@ -38,18 +38,45 @@ module Chronic18n
     return date if date
 
     # try again, but with some heuristics
-    if parts = txt.split(SEPARATORS)
-      if parts.size > 1
-        return parser.parse(parts.last, options)
-      end
+    date = use_separator(txt)
+    if date
+      parsed = parser.parse(date, options)
+      return parsed if parsed
+    end
+
+    date = use_patterns(txt)
+    if date
+      parsed = parser.parse(date, options)
+      return parsed if parsed
     end
   end
 
   SEPARATORS = /\bon\b|\buntil\b|\bby\b|[a-zA-Z\s]+:/i
   SANITIZER_REGEXP = Regexp.new("<[^>]*>")
+  COMMON_PATTERNS = [
+    /\b(\d{1,2}\s+[a-zA-Z\.]+\s+\d{4})/,
+    /\b([a-zA-Z\.]+\s+\d{1,2},\s+\d{4})/
+  ]
 
   def self.sanitize(text)
     text.gsub(SANITIZER_REGEXP, '')
+  end
+
+  def self.use_separator(txt)
+    if parts = txt.split(SEPARATORS)
+      if parts.size > 1
+        parts.last
+      end
+    end
+  end
+
+  def self.use_patterns(txt)
+    COMMON_PATTERNS.each do |pattern|
+      if md = pattern.match(txt)
+        return md[1]
+      end
+    end
+    nil
   end
 end
 

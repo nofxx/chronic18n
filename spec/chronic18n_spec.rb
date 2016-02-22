@@ -18,4 +18,9 @@ describe "Chronic18n" do
     date = Chronic18n.parse("Application date on 20/02/1984")
     date.to_date.should eq(Date.new(1984, 02, 20))
   end
+
+  it 'can recognize some common date patterns' do
+    date = Chronic18n.parse("Tue, 19 Jan 2016 15:01:26 Europe/Amsterdam")
+    date.to_date.should eq(Date.new(2016, 01, 19))
+  end
 end
