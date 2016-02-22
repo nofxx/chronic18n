@@ -34,9 +34,18 @@ module Chronic18n
     parser = cc.parser
 
     txt = Translator.new(txt, lang).work
-    return parser.parse(txt, options)
+    date = parser.parse(txt, options)
+    return date if date
+
+    # try again, but with some heuristics
+    if parts = txt.split(SEPARATORS)
+      if parts.size > 1
+        return parser.parse(parts.last, options)
+      end
+    end
   end
 
+  SEPARATORS = /\bon\b|\buntil\b|\bby\b|[a-zA-Z\s]+:/i
   SANITIZER_REGEXP = Regexp.new("<[^>]*>")
 
   def self.sanitize(text)

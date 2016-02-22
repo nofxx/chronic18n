@@ -13,4 +13,9 @@ describe "Chronic18n" do
   it 'can parse text with html tags' do
     Chronic18n.parse("<strong>Feb 20, 1984</strong>").should_not be_nil
   end
+
+  it 'can parse certain free-form texts with dates' do
+    date = Chronic18n.parse("Application date on 20/02/1984")
+    date.to_date.should eq(Date.new(1984, 02, 20))
+  end
 end
