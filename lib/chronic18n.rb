@@ -20,7 +20,7 @@ module Chronic18n
   #
   def self.parse(txt, options = {})
     return nil if txt.nil?
-    txt = txt.downcase
+    txt = sanitize txt.downcase
 
     country = options.delete(:country)
     lang = options.delete(:lang)
@@ -35,6 +35,12 @@ module Chronic18n
 
     txt = Translator.new(txt, lang).work
     return parser.parse(txt, options)
+  end
+
+  SANITIZER_REGEXP = Regexp.new("<[^>]*>")
+
+  def self.sanitize(text)
+    text.gsub(SANITIZER_REGEXP, '')
   end
 end
 
