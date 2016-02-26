@@ -56,7 +56,7 @@ module Chronic18n
   COMMON_PATTERNS = [
     /\b(\d{1,2}\s+[a-zA-Z\.]+\s+\d{4})/,
     /\b([a-zA-Z\.]+\s+\d{1,2},\s+\d{4})/,
-    /\b(\d{1,2}(?:\/|-)\d{1,2}(?:\/|-)\d{4})/
+    /\b(\d{1,2}(?:\/|-|\.)\d{1,2}(?:\/|-|\.)\d{4})/
   ]
 
   def self.sanitize(text)
