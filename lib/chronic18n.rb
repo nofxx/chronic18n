@@ -38,13 +38,13 @@ module Chronic18n
     return date if date
 
     # try again, but with some heuristics
-    date = use_separator(txt)
+    date = use_patterns(txt)
     if date
       parsed = parser.parse(date, options)
       return parsed if parsed
     end
 
-    date = use_patterns(txt)
+    date = use_separator(txt)
     if date
       parsed = parser.parse(date, options)
       return parsed if parsed
@@ -55,7 +55,8 @@ module Chronic18n
   SANITIZER_REGEXP = Regexp.new("(<[^>]*>)")
   COMMON_PATTERNS = [
     /\b(\d{1,2}\s+[a-zA-Z\.]+\s+\d{4})/,
-    /\b([a-zA-Z\.]+\s+\d{1,2},\s+\d{4})/
+    /\b([a-zA-Z\.]+\s+\d{1,2},\s+\d{4})/,
+    /\b(\d{1,2}(?:\/|-)\d{1,2}(?:\/|-)\d{4})/
   ]
 
   def self.sanitize(text)
