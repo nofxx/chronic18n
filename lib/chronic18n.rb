@@ -51,7 +51,7 @@ module Chronic18n
     end
   end
 
-  SEPARATORS = /\bon\b|\buntil\b|\bby\b|[a-zA-Z\s]+:/i
+  SEPARATORS = /\bon\b|\buntil\b|\bby\b|:\s+/i
   SANITIZER_REGEXP = Regexp.new("(<[^>]*>)")
   COMMON_PATTERNS = [
     /\b(\d{1,2}\s+[a-zA-Z\.]+\s+\d{4})/,
