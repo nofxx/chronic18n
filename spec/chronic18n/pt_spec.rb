@@ -66,4 +66,18 @@ describe "Portuguese" do
     date.month.should == 10
     date.year.should == 2015
   end
+
+  it 'should parse regardless of ordering' do
+    date = Chronic18n.parse("12 Outubro, 2015", country: 'BR')
+    date.day.should == 12
+    date.month.should == 10
+    date.year.should == 2015
+  end
+
+  it 'should parse regardless of abbreviation' do
+    date = Chronic18n.parse("12 fev. 2015", country: 'BR')
+    date.day.should == 12
+    date.month.should == 2
+    date.year.should == 2015
+  end
 end

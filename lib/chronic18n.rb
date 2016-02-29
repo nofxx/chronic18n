@@ -52,16 +52,16 @@ module Chronic18n
   end
 
   SEPARATORS = /\bon\b|\buntil\b|\bby\b|:\s+/i
-  SANITIZER_REGEXP = Regexp.new("(<[^>]*>)")
+  SANITIZER_REGEXP = Regexp.new("(<[^>]*>)|,\\s+")
   COMMON_PATTERNS = [
-    /\b(\d{1,2}\s+[a-zA-Z\.]+\s+\d{4})/,
+    /\b(\d{1,2}\s+[a-zA-Z\.]+,*\s+\d{4})/,
     /\b([a-zA-Z\.]+\s+\d{1,2},\s+\d{4})/,
     /\b(\d{1,2}(?:\/|-|\.)\d{1,2}(?:\/|-|\.)\d{4})/,
     /\b(\d{4}(?:\/|-|\.)\d{1,2}(?:\/|-|\.)\d{1,2})/,
   ]
 
   def self.sanitize(text)
-    text.gsub(SANITIZER_REGEXP, '')
+    text.gsub(SANITIZER_REGEXP, ' ')
   end
 
   def self.use_separator(txt)

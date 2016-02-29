@@ -15,4 +15,11 @@ describe "Thai" do
     date.month.should == 4
     date.year.should == 2015
   end
+
+  it "should parse abbreviated dates" do
+    date = Chronic18n.parse("21 ก.ย. 2558", country: :th)
+    date.day.should == 21
+    date.month.should == 9
+    date.year.should == 2015
+  end
 end
