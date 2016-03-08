@@ -22,4 +22,11 @@ describe "Thai" do
     date.month.should == 9
     date.year.should == 2015
   end
+
+  it "should parse dates included in long texts" do
+    date = Chronic18n.parse("วันที่โพสต์ 4 มี.ค. 2559", country: :th)
+    date.day.should == 4
+    date.month.should == 3
+    date.year.should == 2016
+  end
 end
