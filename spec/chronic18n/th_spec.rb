@@ -29,4 +29,10 @@ describe "Thai" do
     date.month.should == 3
     date.year.should == 2016
   end
+
+  it "should parse x days ago" do
+    date = Chronic18n.parse("3 วันที่แล้ว", country: :th)
+    days_ago = Date.today - 3
+    date.to_date.should == days_ago.to_date
+  end
 end
