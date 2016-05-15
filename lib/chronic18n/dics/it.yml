@@ -2,7 +2,7 @@ it:
   # Misc
   mattina: morning
   pomeriggio: afternoon
-  note: night
+  notte: night
   questo: this
   primo: first
   prima: first
@@ -22,20 +22,22 @@ it:
   prossima: next
   ultimo: last
   ultima: last
+  scorso: last
+  scorsa: last
   oggi: today
   secondo: second
-  secondos: seconds
+  secondi: seconds
   minuto: minute
-  minutos: minutes
+  minuti: minutes
   ora: hour
-  oras: hours
-  diorno: day
+  ore: hours
+  giorno: day
   settimana: week
-  settimanas: weeks
+  settimane: weeks
   mese: month
-  meses: months
+  mesi: months
   anno: year
-  annos: years
+  anni: years
   una: one
 
   # Numbers
@@ -66,7 +68,7 @@ it:
   settanta: seventy
   ottanta: eighty
   novanta: ninety
-  centinaio: one hundred
+  cento: one hundred
   duecento: two hundred
   trecento: three hundred
   quattrocento: four hundred
@@ -79,17 +81,17 @@ it:
 
   # Wdays
   domenica: sunday
-  lunedi: monday
-  martedi: tuesday
-  mercoledi: wednesday
-  giovedi: thursday
-  venerdi: friday
+  lunedì: monday
+  martedì: tuesday
+  mercoledì: wednesday
+  giovedì: thursday
+  venerdì: friday
   sabato: saturday
 
   # Months
   gennaio: january
   febbraio: february
-  marcia: march
+  marzo: march
   aprile: april
   maggio: may
   giugno: june
