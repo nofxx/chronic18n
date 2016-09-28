@@ -27,3 +27,6 @@ th:
   ที่แล้ว: ago
   เมื่อวาน: yesterday
   นาที: minutes
+  ชั่วโมง: hours
+  เดือน: month
+  ปี: year
