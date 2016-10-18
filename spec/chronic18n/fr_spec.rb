@@ -37,4 +37,22 @@ describe "French" do
   it "should parse today" do
     Chronic18n.parse("aujour'dhui à 6 heures", country: 'FR').day.should eql((Time.now.day))
   end
+
+  it "should parse 2 weeks ago" do
+    date = Chronic18n.parse("deux semaines", country: 'FR')
+    days_ago = Date.today - 14
+    date.to_date.should == days_ago.to_date
+  end
+
+  it "should parse a week ago" do
+    date = Chronic18n.parse("une semaine", country: 'FR')
+    days_ago = Date.today - 7
+    date.to_date.should == days_ago.to_date
+  end
+
+  it "should parse 16 minutes ago" do
+    date = Chronic18n.parse("Il y a 16 minutes", country: 'FR')
+    against = (Time.now.min - 16) % 60
+    date.min.should == against
+  end
 end

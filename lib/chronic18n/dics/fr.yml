@@ -22,8 +22,8 @@ fr:
   heures: hours
   jour: day
   jours: days
-  semaine: week
-  semaines: weeks
+  semaine: week ago
+  semaines: weeks ago
   mois: month
   année: year
   années: years
@@ -31,6 +31,7 @@ fr:
 
   # Numbers
   un: one
+  une: one
   deux: two
   trois: three
   quatre: four

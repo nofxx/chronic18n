@@ -1,4 +1,5 @@
 fr_regex:
-  !ruby/regexp "/semaine prochaine/": next week
-  !ruby/regexp "/mois prochain/": next month
-  !ruby/regexp "/année prochaine/": next year
+  !ruby/regexp "/semaine prochaine/i": next week
+  !ruby/regexp "/mois prochain/i": next month
+  !ruby/regexp "/année prochaine/i": next year
+  !ruby/regexp "/Il y a/i": ago

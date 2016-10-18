@@ -1,4 +1,4 @@
 pt_regex:
-  !ruby/regexp '/semana qu?e? vem/': next week
-  !ruby/regexp '/mes qu?e? vem/': next month
-  !ruby/regexp '/ano qu?e? vem/': next year
+  !ruby/regexp '/semana qu?e? vem/i': next week
+  !ruby/regexp '/mes qu?e? vem/i': next month
+  !ruby/regexp '/ano qu?e? vem/i': next year

@@ -1,5 +1,5 @@
 es_regex:
-  !ruby/regexp '/semana qu?e? viene/': next week
-  !ruby/regexp '/mes qu?e? viene/': next month
-  !ruby/regexp '/an?ñ?o qu?e? viene/': next year
-  !ruby/regexp '/a las/': at
+  !ruby/regexp '/semana qu?e? viene/i': next week
+  !ruby/regexp '/mes qu?e? viene/i': next month
+  !ruby/regexp '/an?ñ?o qu?e? viene/i': next year
+  !ruby/regexp '/a las/i': at
