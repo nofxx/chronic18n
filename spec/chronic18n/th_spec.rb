@@ -36,6 +36,12 @@ describe "Thai" do
     date.to_date.should == days_ago.to_date
   end
 
+  it "should parse x days ago in another syntax" do
+    date = Chronic18n.parse("3 วันก่อน", country: :th)
+    days_ago = Date.today - 3
+    date.to_date.should == days_ago.to_date
+  end
+
   it 'should parse buddhist short dates' do
     date = Chronic18n.parse("15 ก.ย. 54", country: :th)
     date.day.should == 15
