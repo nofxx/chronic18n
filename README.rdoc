@@ -1,4 +1,5 @@
 = chronic18n
+{<img src="https://circleci.com/gh/jobseekerltd/chronic18n.svg?style=svg" alt="CircleCI" />}[https://circleci.com/gh/jobseekerltd/chronic18n]
 
 A (naive?) way to use chronic on other languages.
 
