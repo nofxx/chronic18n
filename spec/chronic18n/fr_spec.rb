@@ -55,4 +55,9 @@ describe "French" do
     against = (Time.now.min - 16) % 60
     date.min.should == against
   end
+
+  it "should parse 4 years ago" do
+    date = Chronic18n.parse("Offre postée il y a 4 ans", country: 'FR')
+    date.year.should == Time.now.year - 4
+  end
 end
