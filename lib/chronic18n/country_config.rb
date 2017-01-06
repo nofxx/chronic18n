@@ -5,6 +5,7 @@ module Chronic18n
   class CountryConfig
     CONFIG = YAML.load_file(File.join(File.dirname(__FILE__), 'country_config.yml'))
     DEFAULT_CONFIG = CONFIG['default']
+    LANGUAGE_CONFIG = CONFIG['languages']
 
     def initialize(country)
       if country
@@ -17,8 +18,8 @@ module Chronic18n
       read_config 'parser_options'
     end
 
-    def parser
-      Chronic18n.const_get(read_config('parser'))
+    def parser_for(lang)
+      Chronic18n.const_get(LANGUAGE_CONFIG[lang.to_s] || read_config('parser'))
     end
 
     def detect_language_for(text)

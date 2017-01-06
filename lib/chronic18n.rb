@@ -31,7 +31,7 @@ module Chronic18n
     cc = CountryConfig.new(country)
     options = cc.parser_options.merge(options)
     lang = cc.detect_language_for(txt) if lang.nil?
-    parser = cc.parser
+    parser = cc.parser_for(lang)
 
     txt = Translator.new(txt, lang).work
     date = parser.parse(txt, options)

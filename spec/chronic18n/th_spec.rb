@@ -48,4 +48,11 @@ describe "Thai" do
     date.month.should == 9
     date.year.should == 2011
   end
+
+  it 'should parse buddhist year even if we only provide language' do
+    date = Chronic18n.parse("2560-01-01", lang: 'th')
+    date.day.should == 1
+    date.month.should == 1
+    date.year.should == 2017
+  end
 end
