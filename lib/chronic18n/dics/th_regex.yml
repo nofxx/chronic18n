@@ -1,4 +1,5 @@
 th_regex:
   !ruby/regexp '/วันที่แล้ว/': days ago
   !ruby/regexp '/วันก่อน/': days ago
+  !ruby/regexp '/วันที่ผ่านมา/': days ago
   !ruby/regexp '/สัปดาห์ที่แล้ว/': weeks ago
