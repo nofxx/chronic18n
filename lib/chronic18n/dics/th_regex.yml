@@ -3,4 +3,13 @@ th_regex:
   !ruby/regexp '/วันก่อน/': days ago
   !ruby/regexp '/วันที่ผ่านมา/': days ago
   !ruby/regexp '/สัปดาห์ที่แล้ว/': weeks ago
-  !ruby/regexp '/วันนี้/': today
+  !ruby/regexp '/๐/': "0"
+  !ruby/regexp '/๑/': "1"
+  !ruby/regexp '/๒/': "2"
+  !ruby/regexp '/๓/': "3"
+  !ruby/regexp '/๔/': "4"
+  !ruby/regexp '/๕/': "5"
+  !ruby/regexp '/๖/': "6"
+  !ruby/regexp '/๗/': "7"
+  !ruby/regexp '/๘/': "8"
+  !ruby/regexp '/๙/': "9"

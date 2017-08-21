@@ -10,24 +10,18 @@ describe "Thai" do
   end
 
   it "should parse dates from the buddhist date calendar" do
-    date = Chronic18n.parse("21 เมษายน 2558", country: :th)
-    date.day.should == 21
-    date.month.should == 4
-    date.year.should == 2015
+    date = Chronic18n.parse("21 เมษายน 2558", country: :th).to_date
+    date.should == Date.new(2015, 4, 21)    
   end
 
   it "should parse abbreviated dates" do
-    date = Chronic18n.parse("21 ก.ย. 2558", country: :th)
-    date.day.should == 21
-    date.month.should == 9
-    date.year.should == 2015
+    date = Chronic18n.parse("21 ก.ย. 2558", country: :th).to_date
+    date.should == Date.new(2015, 9, 21)
   end
 
   it "should parse dates included in long texts" do
-    date = Chronic18n.parse("วันที่โพสต์ 4 มี.ค. 2559", country: :th)
-    date.day.should == 4
-    date.month.should == 3
-    date.year.should == 2016
+    date = Chronic18n.parse("วันที่โพสต์ 4 มี.ค. 2559", country: :th).to_date
+    date.should == Date.new(2016, 3, 4)
   end
 
   it "should parse x days ago" do
@@ -49,10 +43,8 @@ describe "Thai" do
   end
 
   it 'should parse buddhist short dates' do
-    date = Chronic18n.parse("15 ก.ย. 54", country: :th)
-    date.day.should == 15
-    date.month.should == 9
-    date.year.should == 2011
+    date = Chronic18n.parse("15 ก.ย. 54", country: :th).to_date
+    date.should == Date.new(2011, 9, 15)
   end
 
   it 'should parse buddhist year even if we only provide language' do
@@ -64,5 +56,10 @@ describe "Thai" do
 
   it 'should parse today' do
     Chronic18n.parse('วันนี้').to_date.should == Date.today
+  end
+
+  it 'should parse number in thai' do
+    date = Chronic18n.parse("๑๕ ก.ย. ๕๔", country: :th).to_date
+    date.should == Date.new(2011, 9, 15)
   end
 end
