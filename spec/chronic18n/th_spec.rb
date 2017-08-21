@@ -61,4 +61,8 @@ describe "Thai" do
     date.month.should == 1
     date.year.should == 2017
   end
+
+  it 'should parse today' do
+    Chronic18n.parse('วันนี้').to_date.should == Date.today
+  end
 end
