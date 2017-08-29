@@ -2,3 +2,5 @@ fr_regex:
   !ruby/regexp "/semaine prochaine/": next week
   !ruby/regexp "/mois prochain/": next month
   !ruby/regexp "/année prochaine/": next year
+ 
+ 

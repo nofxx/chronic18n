@@ -1,5 +1,5 @@
-require "chronic"
-require "yaml"
+require 'chronic'
+require 'yaml'
 
 require "chronic18n/translator"
 
