@@ -4,7 +4,9 @@ fr:
   après-midi: afternoon
   midi: noon
   nuit: night
+  soir: night
   ce: this
+  cette: this
   premier: first
 
   # Common
