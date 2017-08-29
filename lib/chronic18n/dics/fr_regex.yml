@@ -2,3 +2,22 @@ fr_regex:
   !ruby/regexp "/semaine prochaine/": next week
   !ruby/regexp "/mois prochain/": next month
   !ruby/regexp "/année prochaine/": next year
+  !ruby/regexp "/deuxieme/": next year
+  text.gsub!(/^deuxieme /, '2nd ')
+  text.gsub!(/\bdeuxieme (du|jour|mois|heure|minute|seconde|trimestre)\b/, '2nd \1')
+  text.gsub!(/\bhier\b/, 'last day')
+  text.gsub!(/\baujourdhui\b/, 'this day')
+  text.gsub!(/\bdem?ma?in\b/, 'next day')
+  text.gsub!(/\btroisieme trimestre\b/, '3rd q')
+  text.gsub!(/\bquatrieme trimestre\b/, '4th q')
+  text.gsub!(/\bminuit\b/, '24:00')
+  text.gsub!(/\bmaintenant\b/, 'this second')
+  text.gsub!('trimestre', '15')
+  text.gsub!('moitie', '30')
+  text.gsub!(/\bmidi|dej\b/, '12:00pm')
+  text.gsub!(/(\d{1,2}) (moins|avant)\b/, '\1 minutes past') #a tester
+  text.gsub!(/\bce\ssoir\b/, 'this night')
+  text.gsub!(/\bsoirce\b/, 'this night')
+  text.gsub!(/\bce (?:dernier|derniere)\b/, 'last') #a tester
+  text.gsub!(/\b(?:il\sy\sa|avant|il\sya(?: now)?)\b/, 'past')
+
