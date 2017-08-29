@@ -1,5 +1,5 @@
-require "chronic-master", :git => "git@github.com:valentinfage/chronic-master.git"
-require "yaml"
+require 'chronic'
+require 'yaml'
 
 require "chronic18n/translator"
 
