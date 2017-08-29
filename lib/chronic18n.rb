@@ -1,4 +1,4 @@
-require "chronic"
+require "chronic", path: => "git@github.com:valentinfage/chronic-master.git"
 require "yaml"
 
 require "chronic18n/translator"
