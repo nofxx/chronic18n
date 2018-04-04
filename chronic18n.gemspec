@@ -44,6 +44,7 @@ Gem::Specification.new do |s|
   s.summary = "i18n chronic"
 
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'timecop'
   s.add_dependency 'chronic'
   s.add_dependency 'countries'
   s.add_dependency 'cld'

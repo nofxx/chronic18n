@@ -60,4 +60,23 @@ describe "French" do
     date = Chronic18n.parse("Offre postée il y a 4 ans", country: 'FR')
     date.year.should == Time.now.year - 4
   end
+
+  describe '#parse' do
+    let(:lang) { 'fr' }
+    let(:country) { 'FR' }
+
+    around do |example|
+      Timecop.freeze(2018, 4, 4) do
+        example.run
+      end
+    end
+
+    {
+      '20 février 2018' => '20 Feb 2018'
+    }.each do |source, parsed|
+      it "parses #{source} as #{parsed}" do
+        Chronic18n.parse(source, country: country).to_date.should == Date.parse(parsed)
+      end
+    end
+  end
 end
