@@ -3,3 +3,4 @@ fr_regex:
   !ruby/regexp "/mois prochain/i": next month
   !ruby/regexp "/année prochaine/i": next year
   !ruby/regexp "/Il y a/i": ago
+  !ruby/regexp "/1er/i": '1'

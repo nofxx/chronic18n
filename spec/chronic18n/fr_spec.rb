@@ -72,7 +72,8 @@ describe "French" do
     end
 
     {
-      '20 février 2018' => '20 Feb 2018'
+      '20 février 2018' => '20 Feb 2018',
+      'lundi 1er février 2016' => '1 Feb 2016'
     }.each do |source, parsed|
       it "parses #{source} as #{parsed}" do
         Chronic18n.parse(source, country: country).to_date.should == Date.parse(parsed)
