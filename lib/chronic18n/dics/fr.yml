@@ -104,23 +104,31 @@ fr:
   decembre: december
   jan: january
   janv: january
+  janv.: january
   fev: february
   fév: february
   févr: february
+  févr.: february
   mar: march
   avr: april
+  avr.: april
   mai: may
   jun: june
   jul: july
+  juil.: july
   juill: july
   aou: august
   aoû: august
   sept: september
+  sept.: september
   sep: september
   oct: october
+  oct.: october
   nov: november
+  nov.: november
   dec: december
   déc: december
+  déc.: december
 
   # Season
   été: summer
