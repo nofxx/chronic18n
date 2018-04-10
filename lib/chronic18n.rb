@@ -20,6 +20,7 @@ module Chronic18n
   #
   def self.parse(txt, options = {})
     return nil if txt.nil?
+
     txt = sanitize txt.downcase
 
     country = options.delete(:country)
@@ -55,9 +56,10 @@ module Chronic18n
   SANITIZER_REGEXP = Regexp.new("(<[^>]*>)|,\\s+")
   COMMON_PATTERNS = [
     /\b(\d{1,2}\s+[a-zA-Z\.]+,*\s+\d{4})/,
-    /\b([\p{L}\.]+\s+\d{1,2},\s+\d{4})/,
+    /\b([\p{L}\.]+)[-_,\s]+(\d{1,2})[-_,\s]+(\d{4})/,
     /\b(\d{1,2}(?:\/|-|\.)\d{1,2}(?:\/|-|\.)\d{4})/,
-    /\b(\d{4}(?:\/|-|\.)\d{1,2}(?:\/|-|\.)\d{1,2})/,
+    /\b(\d{4})[?:\/|-|\.](\d{1,2})[?:\/|-|\.](\d{1,2})/,
+    /\b(\d{1,2})[-_,\s]+(\p{L}*)/
   ]
 
   def self.sanitize(text)
@@ -75,7 +77,7 @@ module Chronic18n
   def self.use_patterns(txt)
     COMMON_PATTERNS.each do |pattern|
       if md = pattern.match(txt)
-        return md[1]
+        return md[1..3].join(' ')
       end
     end
     nil
