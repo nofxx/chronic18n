@@ -27,16 +27,11 @@ describe "English" do
     date.year.should == 2005
   end
 
-  it "repsonds to dashes in date" do
-    date = Chronic18n.parse("Dec-14-2017", country: 'US').to_date
-    date.should == Date.new(2017, 12, 14)
-  end
-
-  it "parses date without year and skips time" do
+  it 'parses date without year and skips time' do
     today = Date.new(2011, 3, 7)
     Timecop.freeze(today)
 
-    date = Chronic18n.parse("16 Dec-19:52", country: 'US').to_date
+    date = Chronic18n.parse('16 Dec-19:52', country: 'AU').to_date
     date.should == Date.new(2011, 12, 16)
 
     Timecop.return

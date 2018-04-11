@@ -1,7 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "Chronic18n" do
-
   it "exists" do
     Chronic18n.should be_a Module
   end
@@ -22,5 +21,23 @@ describe "Chronic18n" do
   it 'can recognize some common date patterns' do
     date = Chronic18n.parse("Tue, 19 Jan 2016 15:01:26 Europe/Amsterdam")
     date.to_date.should eq(Date.new(2016, 01, 19))
+  end
+
+  context 'patterns' do
+    {
+      '2006-01-03' => Date.new(2006, 01, 03),
+      '2006/01/03' => Date.new(2006, 01, 03),
+      '2006/1/3' => Date.new(2006, 01, 03),
+      '2006.01.03' => Date.new(2006, 01, 03),
+      '10 December 2016' => Date.new(2016, 12, 10),
+      'Dec 11 2017' => Date.new(2017, 12, 11),
+      'Dec-11-2017' => Date.new(2017, 12, 11),
+      '1 March 2011' => Date.new(2011, 3, 1),
+      '2006 01 03' => Date.new(2006, 01, 03),
+    }.each do |source, expectation|
+      it "parses #{source} format" do
+        Chronic18n.parse(source).to_date.should == expectation
+      end
+    end
   end
 end

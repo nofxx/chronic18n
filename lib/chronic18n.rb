@@ -55,11 +55,10 @@ module Chronic18n
   SEPARATORS = /\bon\b|\buntil\b|\bby\b|:\s+/i
   SANITIZER_REGEXP = Regexp.new("(<[^>]*>)|,\\s+")
   COMMON_PATTERNS = [
-    /\b(\d{1,2}\s+[a-zA-Z\.]+,*\s+\d{4})/,
-    /\b([\p{L}\.]+)[-_,\s]+(\d{1,2})[-_,\s]+(\d{4})/,
-    /\b(\d{1,2}(?:\/|-|\.)\d{1,2}(?:\/|-|\.)\d{4})/,
-    /\b(\d{4})[?:\/|-|\.](\d{1,2})[?:\/|-|\.](\d{1,2})/,
-    /\b(\d{1,2})[-_,\s]+(\p{L}*)/
+    /\b(?'day'\d{1,2})\s+(?'month'[a-zA-Z\.]+),*\s+(?'year'\d{4})/,
+    /\b(?'month'[\p{L}\.]+)[-_,\s]+(?'day'\d{1,2})[-_,\s]+(?'year'\d{4})/,
+    /\b(?'year'\d{4})[-.\/\s]?(?'month'\d{1,2})[-.\/\s]?(?'day'\d{1,2})/,
+    /\b(?'day'\d{1,2})[-_,\s]+(?'month'\p{L}*)[-_,\s]*(?'year'\d{4})?/
   ]
 
   def self.sanitize(text)
@@ -77,7 +76,11 @@ module Chronic18n
   def self.use_patterns(txt)
     COMMON_PATTERNS.each do |pattern|
       if md = pattern.match(txt)
-        return md[1..3].join(' ')
+        if md['month'].length > 2
+          return "#{md['day']} #{md['month']} #{md['year']}"
+        else
+          return "#{md['day']}/#{md['month']}/#{md['year']}"
+        end
       end
     end
     nil

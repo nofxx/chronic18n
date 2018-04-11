@@ -89,7 +89,7 @@ describe "French" do
     end
 
     it "parses date, ignores time" do
-      date = Chronic18n.parse("Jeudi, novembre 30, 2017 - 10:15", country: 'US').to_date
+      date = Chronic18n.parse("Jeudi, novembre 30, 2017 - 10:15", country: 'FR').to_date
       date.should == Date.new(2017, 11, 30)
     end
   end
