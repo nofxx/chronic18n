@@ -1,4 +1,4 @@
-require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require 'spec_helper'
 
 describe "Chronic18n" do
   it "exists" do
@@ -21,6 +21,14 @@ describe "Chronic18n" do
   it 'can recognize some common date patterns' do
     date = Chronic18n.parse("Tue, 19 Jan 2016 15:01:26 Europe/Amsterdam")
     date.to_date.should eq(Date.new(2016, 01, 19))
+  end
+
+  it 'can recognize some special date patterns' do
+    date = Chronic18n.parse('00:00:00 25/12/2018')
+    date.to_date.should eq(Date.new(2018, 12, 25))
+
+    date = Chronic18n.parse('Sat, 17 03 18 11:47:01 +0000')
+    date.to_date.should eq(Date.new(2018, 03, 17))
   end
 
   context 'patterns' do

@@ -26,3 +26,4 @@ pkg
 /coverage/
 /doc/
 /tags/
+.byebug_history

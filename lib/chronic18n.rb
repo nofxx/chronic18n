@@ -54,12 +54,14 @@ module Chronic18n
 
   SEPARATORS = /\bon\b|\buntil\b|\bby\b|:\s+/i
   SANITIZER_REGEXP = Regexp.new("(<[^>]*>)|,\\s+")
-  COMMON_PATTERNS = [
+  COMMON_DATE_PATTERNS = [
     /\b(?'day'\d{1,2})\s+(?'month'[a-zA-Z\.]+),*\s+(?'year'\d{4})/,
     /\b(?'month'[\p{L}\.]+)[-_,\s]+(?'day'\d{1,2})[-_,\s]+(?'year'\d{4})/,
     /\b(?'year'\d{4})[-.\/\s]?(?'month'\d{1,2})[-.\/\s]?(?'day'\d{1,2})/,
+    /\b(?'day'\d{1,2})[\s\/](?'month'\d{1,2})[\s\/](?'year'\d{4}|\d{2})/,
     /\b(?'day'\d{1,2})[-_,\s]+(?'month'\p{L}*)[-_,\s]*(?'year'\d{4})?/
   ]
+  TIME_PATTERN = /(?'hour'\d{1,2}):(?'minute'\d{1,2})(?::(?'second'\d{1,2}))?/
 
   def self.sanitize(text)
     text.gsub(SANITIZER_REGEXP, ' ')
@@ -74,7 +76,14 @@ module Chronic18n
   end
 
   def self.use_patterns(txt)
-    COMMON_PATTERNS.each do |pattern|
+    time = extract_time(txt) || ''
+    txt_without_time = sanitize(txt.gsub(time, ''))
+    date = extract_date(txt_without_time)
+    "#{date} #{time}".strip
+  end
+
+  def self.extract_date(txt)
+    COMMON_DATE_PATTERNS.each do |pattern|
       if md = pattern.match(txt)
         if md['month'].length > 2
           return "#{md['day']} #{md['month']} #{md['year']}"
@@ -84,5 +93,11 @@ module Chronic18n
       end
     end
     nil
+  end
+
+  def self.extract_time(txt)
+    mt = TIME_PATTERN.match(txt)
+    return nil unless mt
+    mt[0]
   end
 end

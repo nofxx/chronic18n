@@ -44,6 +44,7 @@ Gem::Specification.new do |s|
   s.summary = "i18n chronic"
 
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'pry-byebug'
   s.add_development_dependency 'timecop'
   s.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
   s.add_dependency 'chronic'

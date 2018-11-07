@@ -1,4 +1,4 @@
-require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
+require 'spec_helper'
 
 describe "Thai" do
   it "should parse something with lang supplied" do
@@ -11,7 +11,7 @@ describe "Thai" do
 
   it "should parse dates from the buddhist date calendar" do
     date = Chronic18n.parse("21 เมษายน 2558", country: :th).to_date
-    date.should == Date.new(2015, 4, 21)    
+    date.should == Date.new(2015, 4, 21)
   end
 
   it "should parse abbreviated dates" do
