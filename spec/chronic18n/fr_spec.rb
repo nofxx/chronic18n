@@ -31,7 +31,7 @@ describe "French" do
   end
 
   it "should parse next month" do
-    Chronic18n.parse("le mois prochain", lang: :fr).month.should eql(((Time.now.month + 1) % 12))
+    Chronic18n.parse("le mois prochain", lang: :fr).month.should eql(Time.now.month % 12 + 1)
   end
 
   it "should parse today" do

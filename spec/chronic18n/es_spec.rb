@@ -34,7 +34,7 @@ describe "Spanish" do
   end
 
   it "should parse next month" do
-    Chronic18n.parse("mes que viene", country: 'AR').month.should eql(((Time.now.month + 1) % 12))
+    Chronic18n.parse("mes que viene", country: 'AR').month.should eql(Time.now.month % 12 + 1)
   end
 
   it "should parse today" do

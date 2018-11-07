@@ -35,7 +35,7 @@ describe "Russian" do
   end
 
   it "should parse next month" do
-    Chronic18n.parse("следующего месяца", country: 'RU').month.should eql((Time.now.month + 1) % 12)
+    Chronic18n.parse("следующего месяца", country: 'RU').month.should eql(Time.now.month % 12 + 1)
   end
 
   it "should parse days" do

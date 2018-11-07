@@ -37,11 +37,11 @@ describe "Portuguese" do
   end
 
   it "should parse next month" do
-    Chronic18n.parse("mes que vem", country: 'BR').month.should eql((Time.now.month + 1) % 12)
-    Chronic18n.parse("proximo mes", country: :pt).month.should eql((Time.now.month + 1) % 12)
-    Chronic18n.parse("proximo mês", lang: :pt).month.should eql((Time.now.month + 1) % 12)
-    Chronic18n.parse("próximo mes", lang: :pt).month.should eql((Time.now.month + 1) % 12)
-    Chronic18n.parse("próximo mês", lang: :pt).month.should eql((Time.now.month + 1) % 12)
+    Chronic18n.parse("mes que vem", country: 'BR').month.should eql(Time.now.month % 12 + 1)
+    Chronic18n.parse("proximo mes", country: :pt).month.should eql(Time.now.month % 12 + 1)
+    Chronic18n.parse("proximo mês", lang: :pt).month.should eql(Time.now.month % 12 + 1)
+    Chronic18n.parse("próximo mes", lang: :pt).month.should eql(Time.now.month % 12 + 1)
+    Chronic18n.parse("próximo mês", lang: :pt).month.should eql(Time.now.month % 12 + 1)
   end
 
   it "should parse days" do
