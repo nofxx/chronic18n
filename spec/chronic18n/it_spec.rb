@@ -14,6 +14,10 @@ describe "Italian" do
     Chronic18n.parse("in 7 minutos", lang: :it).min.should eql((Time.now.min + 7) % 60)
   end
 
+  it "should parse sunday with language autodetection" do
+    Chronic18n.parse("domenica").wday.should eql(0)
+  end
+
   it "should parse sunday" do
     Chronic18n.parse("domenica", country: :it).wday.should eql(0)
   end

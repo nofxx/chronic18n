@@ -9,6 +9,10 @@ describe "Thai" do
     Chronic18n.parse("21 เมษายน 2015", country: 'TH').should eq(Time.parse("2015-04-21 12:00:00"))
   end
 
+  it "should parse something with language autodetection" do
+    Chronic18n.parse("21 เมษายน 2015").should eq(Time.parse("2015-04-21 12:00:00"))
+  end
+
   it "should parse dates from the buddhist date calendar" do
     date = Chronic18n.parse("21 เมษายน 2558", country: :th).to_date
     date.should == Date.new(2015, 4, 21)
