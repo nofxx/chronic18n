@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: jobseeker/docker-library:ruby-2.4-ci
+      - image: jobseeker/docker-library:ruby-2.4-ci-bionic
         auth:
           username: $DOCKER_USER
           password: $DOCKER_PASS
@@ -11,12 +11,12 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-            - gem-cache-{{ arch }}-{{ .Branch }}
-            - gem-cache
+            - v2-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+            - v2-gem-cache-{{ arch }}-{{ .Branch }}
+            - v2-gem-cache
       - run: bundle install --path vendor/bundle
       - save_cache:
-          key: gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          key: v2-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run: mkdir /reports

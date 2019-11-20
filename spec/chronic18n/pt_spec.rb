@@ -10,6 +10,11 @@ describe "Portuguese" do
     Chronic18n.parse("daqui a 7 horas", lang: :pt).hour.should eql(get_time(7 * HOURS).hour)
   end
 
+  it "should parse hour with language autodetection" do
+    Chronic18n.parse("daqui 7 horas").hour.should eql(get_time(7 * HOURS).hour)
+    Chronic18n.parse("daqui a 7 horas").hour.should eql(get_time(7 * HOURS).hour)
+  end
+
   it "should parse hour" do
     Chronic18n.parse("em 7 minutos", lang: :pt).min.should eql((Time.now.min + 7) % 60)
     Chronic18n.parse("daqui a 7 minutos", lang: :pt).min.should eql((Time.now.min + 7) % 60)

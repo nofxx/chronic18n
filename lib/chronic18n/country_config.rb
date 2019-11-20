@@ -1,5 +1,5 @@
 require 'countries'
-require 'cld'
+require 'cld3'
 
 module Chronic18n
   class CountryConfig
@@ -22,6 +22,14 @@ module Chronic18n
       Chronic18n.const_get(LANGUAGE_CONFIG[lang.to_s] || read_config('parser'))
     end
 
+    def detect_language_using_cld(text)
+      cld3 = CLD3::NNetLanguageIdentifier.new(0, 1000)
+      result = cld3.find_language(text)
+      return unless result
+
+      result[:language].to_s.downcase
+    end
+
     def detect_language_for(text)
       if @country
         tokens = text.split(/\s/)
@@ -34,8 +42,7 @@ module Chronic18n
         end
       end
 
-      res = CLD.detect_language(text)
-      return res[:code] if res
+      detect_language_using_cld(text)
     end
 
     private

@@ -34,6 +34,10 @@ describe "French" do
     Chronic18n.parse("le mois prochain", lang: :fr).month.should eql(Time.now.month % 12 + 1)
   end
 
+  it "should parse next month and autodetect language" do
+    Chronic18n.parse("le mois prochain").month.should eql(Time.now.month % 12 + 1)
+  end
+
   it "should parse today" do
     Chronic18n.parse("aujour'dhui à 6 heures", country: 'FR').day.should eql((Time.now.day))
   end

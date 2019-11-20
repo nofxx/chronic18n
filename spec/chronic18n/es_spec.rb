@@ -37,6 +37,10 @@ describe "Spanish" do
     Chronic18n.parse("mes que viene", country: 'AR').month.should eql(Time.now.month % 12 + 1)
   end
 
+  it "should parse next month, and autodetect language" do
+    Chronic18n.parse("mes que viene").month.should eql(Time.now.month % 12 + 1)
+  end
+
   it "should parse today" do
     Chronic18n.parse("hoy a las 6pm", country: 'MX').day.should eql((Time.now.day))
   end

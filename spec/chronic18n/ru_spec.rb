@@ -7,6 +7,10 @@ describe "Russian" do
     Chronic18n.parse("воскресенье", lang: :ru).should be_a Time
   end
 
+  it "should parse something with language autodetection" do
+    Chronic18n.parse("воскресенье").should be_a Time
+  end
+
   it "should parse hour" do
     Chronic18n.parse("через 7 часов", country: 'RU').hour.should eql(get_time(7 * HOURS).hour)
   end
