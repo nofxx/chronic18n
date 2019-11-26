@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "chronic18n"
-  s.version = "0.1.0"
+  s.version = "0.2.0"
   s.authors = ["Jora team", "Marcos Piccinini"]
   s.summary = "i18n chronic"
   s.description = "One 'way' to i18n chronic"
@@ -21,5 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
   s.add_dependency 'chronic'
   s.add_dependency 'countries'
+
+  # cld is more reliable than cld3 when it comes to short text.
   s.add_dependency 'cld'
 end
