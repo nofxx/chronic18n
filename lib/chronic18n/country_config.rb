@@ -1,5 +1,5 @@
 require 'countries'
-require 'cld3'
+require 'cld'
 
 module Chronic18n
   class CountryConfig
@@ -23,11 +23,9 @@ module Chronic18n
     end
 
     def detect_language_using_cld(text)
-      cld3 = CLD3::NNetLanguageIdentifier.new(0, 1000)
-      result = cld3.find_language(text)
-      return unless result
-
-      result[:language].to_s.downcase
+      result = CLD.detect_language(text)
+      # { name: 'ENGLISH', code: 'en', reliable: false }
+      result && result[:code]
     end
 
     def detect_language_for(text)

@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
   s.add_dependency 'chronic'
   s.add_dependency 'countries'
-  s.add_dependency 'cld3'
+  s.add_dependency 'cld'
 end
